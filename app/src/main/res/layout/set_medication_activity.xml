@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.setmedication.SetMedicationActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/thursday"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/roundedbutton_on"
+            android:tag="off"
+            android:text="@string/thursday"
+            android:textColor="@color/uniband_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/wednesday"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="T" />
+
+        <Button
+            android:id="@+id/friday"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/roundedbutton_on"
+            android:tag="off"
+            android:text="@string/friday"
+            android:textColor="@color/uniband_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/thursday"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="F" />
+
+        <TextView
+            android:id="@+id/medication_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="116dp"
+            android:text="@string/medication_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/medication_name" />
+
+        <Spinner
+            android:id="@+id/spinner_medsname"
+            android:layout_width="266dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/holo_blue_light"
+            android:entries="@array/meds_type_array"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medication_name" />
+
+        <TextView
+            android:id="@+id/medication_dosage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/medication_dosage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_medsname"
+            tools:text="Dosage" />
+
+        <Spinner
+            android:id="@+id/spinner_medsamount"
+            android:layout_width="257dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_light"
+            android:entries="@array/meds_dosage_array"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medication_dosage" />
+
+        <Button
+            android:id="@+id/monday"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/roundedbutton_on"
+            android:tag="off"
+            android:text="@string/monday"
+            android:textColor="@color/uniband_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="M" />
+
+
+        <Button
+            android:id="@+id/sunday"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/roundedbutton_on"
+            android:tag="off"
+            android:text="@string/sunday"
+            android:textColor="@color/uniband_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/saturday"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="S" />
+
+        <Button
+            android:id="@+id/saturday"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/roundedbutton_on"
+            android:tag="off"
+            android:text="@string/saturday"
+            android:textColor="@color/uniband_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/friday"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="S" />
+
+        <Button
+            android:id="@+id/tuesday"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/roundedbutton_on"
+            android:tag="off"
+            android:text="@string/tuesday"
+            android:textColor="@color/uniband_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/monday"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="T" />
+
+        <Button
+            android:id="@+id/wednesday"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/roundedbutton_on"
+            android:tag="off"
+            android:text="@string/wednesday"
+            android:textColor="@color/uniband_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tuesday"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="W" />
+
+        <TextView
+            android:id="@+id/frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/frequency"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_medsamount"
+            tools:text="frequency" />
+
+        <Spinner
+            android:id="@+id/spinner_frequency"
+            android:layout_width="268dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_light"
+            android:entries="@array/meds_frequency"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frequency" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_frequency"
+            tools:text="Time" />
+
+            <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="254dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time">
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="284dp"
+            android:layout_marginTop="44dp"
+            android:onClick="next"
+            android:text="@string/next"
+            android:textColor="@color/uniband_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sunday" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
+

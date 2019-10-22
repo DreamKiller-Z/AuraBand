@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.setmedication.ShowMedication"
+    tools:showIn="@layout/activity_show_medication">
+
+    <TextView
+        android:id="@+id/meds_name"
+        android:layout_width="231dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="79dp"
+        android:text="@string/medication_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meds_frequency"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/frequency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meds_amount" />
+
+    <TextView
+        android:id="@+id/meds_amount"
+        android:layout_width="216dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/medication_dosage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meds_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

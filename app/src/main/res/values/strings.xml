@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">uniband</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="medication_name">Medication</string>
+    <string name="frequency">Frequency</string>
+    <string name="monday">M</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+    <string name="thursday">T</string>
+    <string name="friday">F</string>
+    <string name="saturday">S</string>
+    <string name="sunday">S</string>
+    <string name="medication_dosage">Dosage</string>
+    <string name="time">Time</string>
+    <string name="linear_layout"></string>
+    <item name="edit_1" type="id"></item>
+    <string name="next">next</string>
+    <!--    <item type="id" name="button_generated1"></item>-->
+    <string-array name="meds_type_array">
+        <item>Select</item>
+        <item>Carbidopa/Levodopa</item>
+        <item>Amantadine</item>
+        <item>Ritalin</item>
+        <item>Vitamin D</item>
+        <item>Vitamin B</item>
+        <item>RopineroleXL</item>
+        <item>Docusate Sodium</item>
+        <item>Pristiq</item>
+        <item>Clonazepam</item>
+    </string-array>
+    <string-array name="meds_dosage_array">
+        <item>Select</item>
+        <item>1 tablet</item>
+        <item>1.5 tablets</item>
+        <item>2 tablets</item>
+    </string-array>
+    <string-array name="meds_frequency">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_show_medication">ShowMedication</string>
+</resources>
